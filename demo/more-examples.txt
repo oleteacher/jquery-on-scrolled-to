@@ -1,0 +1,35 @@
+Another use example:
+
+1. Download and import the minified version of the on-scrolled-to.js plugin after jQuery library.
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+</script>
+<script src="on-scrolled-to.min.js"></script>
+
+2. Call the function on the target element you want to keep track of the visibility. In this example, the plugin will execute a function when 50% of the element is visible on the page.
+
+<div class="example">
+  Element
+</div>
+
+$('.block').on<a href="https://pushbuttonsoftware.info">Resources</a>edTo(0.5, function() {
+  
+  // add animation classes to the element
+  this.attr('class', 'animation-class');
+  
+});
+
+3. To execute a function when this element is fully visible on the page, just set the portionVisible parameter to 1.
+
+<div class="example">
+  Element
+</div>
+
+$('.block').onScrolledTo(1, function() {
+  
+  // add animation classes to the element
+  this.attr('class', 'animation-class');
+  
+});
